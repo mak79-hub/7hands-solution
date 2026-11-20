@@ -7,7 +7,8 @@
   <meta name="theme-color" content="#ffffff">
   <meta name="description" content="Individuelle Software und Automatisierung für Unternehmen verschiedener Branchen.">
   <title>Software & Automatisierung | 7Hands Solution</title>
-  <link rel="stylesheet" href="/site.css">
+  <link rel="stylesheet" href="/site.css?v=tisch9-video">
+  <script src="/bestellvideo.js" defer></script>
 </head>
 <body>
 <header>
@@ -39,9 +40,17 @@
     <p>Gäste öffnen die Speisekarte per QR-Code. Bestellungen können direkt beim Team ankommen, das sie an der Theke bearbeitet.</p>
     <div class="actions"><a class="button" href="/loesungen.html">Lösungen ansehen <span aria-hidden="true">→</span></a><a class="button secondary" href="/kontakt.html">Projekt besprechen</a></div>
   </div>
-  <a class="hero-image" href="/gastronomie.html"><img src="/bilder/qr-tisch.webp" alt="Aufsteller „Hier bestellen“ auf einem Holztisch" loading="eager" decoding="async"><span>Digitale Bestellung am Tisch <span aria-hidden="true">↗</span></span></a>
+  <div class="hero-image hero-video">
+    <video id="bestellvideo" autoplay muted loop playsinline preload="metadata" poster="/bilder/qr-tisch.webp" width="1080" height="1080" aria-label="Beispiel: QR-Code scannen, ein Gericht für Tisch 9 auswählen und Bestellung 104 an der Theke empfangen.">
+      <source src="/videos/digital-bestellen-tisch9.mp4" type="video/mp4">
+      <a href="/videos/digital-bestellen-tisch9.mp4">Video zur digitalen Bestellung ansehen</a>
+    </video>
+    <button class="video-toggle" type="button" aria-controls="bestellvideo" hidden>Video pausieren</button>
+    <a class="video-link" href="/gastronomie.html">Digitale Bestellung am Tisch <span aria-hidden="true">↗</span></a>
+  </div>
 </section>
 <section class="home-products"><h2>Software für Ihren Betriebsalltag</h2><div class="product-grid"><article class="product"><a href="/gastronomie.html"><img src="/bilder/gastro-bestellen.webp" alt="Digitale Speisekarte für Gastronomie" loading="lazy" decoding="async"><div><small class="kicker">Bereits im Einsatz</small><h3>Gastronomie</h3><p>Digitale Bestellungen und Bonuspunkte für Restaurants und Imbisse.</p><span class="product-link">Lösung ansehen <span aria-hidden="true">→</span></span></div></a></article><article class="product"><a href="/disposition.html"><img src="/bilder/transport-disposition.webp" alt="Disposition mit Tagesplan und Fahrerzuordnung" loading="lazy" decoding="async"><div><small class="kicker">Wird weiterentwickelt</small><h3>Disposition für Krankenfahrten</h3><p>Fahrten planen, Fahrer zuweisen und offene Aufträge im Blick behalten.</p><span class="product-link">Lösung ansehen <span aria-hidden="true">→</span></span></div></a></article><article class="product"><a href="/supermarkt.html"><img src="/bilder/markt-lager.webp" alt="Entwurf einer Lagerübersicht für den Einzelhandel" loading="lazy" decoding="async"><div><small class="kicker">Konzept</small><h3>Supermarkt & Lagerverwaltung</h3><p>Kundenbindung, Angebote und Warenbestände in einer hellen, übersichtlichen Oberfläche.</p><span class="product-link">Lösung ansehen <span aria-hidden="true">→</span></span></div></a></article></div></section><section class="end-panel"><div><h2>Welche Aufgabe kostet Sie jeden Tag Zeit?</h2><p>Gemeinsam schauen wir, welche Abläufe sich vereinfachen oder automatisieren lassen.</p></div><a class="button" href="/kontakt.html">Projekt besprechen <span aria-hidden="true">→</span></a></section></main>
 <footer>7Hands Solution · <a href="/impressum.html">Impressum</a> · <a href="/datenschutz.html">Datenschutz</a> · Rechtliche Pflichtangaben werden vervollständigt.</footer>
 </body>
 </html>
+
