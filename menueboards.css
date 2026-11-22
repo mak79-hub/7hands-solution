@@ -1,0 +1,120 @@
+.board-gallery {
+  display: grid;
+  grid-template-columns: minmax(0, 2.35fr) minmax(270px, 1fr);
+  align-items: start;
+  gap: clamp(20px, 3vw, 44px);
+  margin-bottom: clamp(38px, 6vw, 82px);
+}
+
+.board-player {
+  min-width: 0;
+  margin: 0;
+  border-top: 2px solid var(--line);
+}
+
+.board-player video {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  background: #10151e;
+}
+
+.board-player figcaption {
+  padding: 18px 0 0;
+}
+
+.board-player h2 {
+  margin: 0 0 5px;
+  font-size: clamp(25px, 2.8vw, 37px);
+}
+
+.board-player p {
+  margin: 0;
+}
+
+.board-picker section {
+  margin: 0;
+}
+
+.board-picker section + section {
+  margin-top: 24px;
+}
+
+.board-picker h2 {
+  margin: 0 0 10px;
+  font: 700 .85rem/1.4 system-ui, sans-serif;
+  color: #735317;
+}
+
+.board-options {
+  display: grid;
+  gap: 6px;
+}
+
+.board-option {
+  display: grid;
+  grid-template-columns: clamp(72px, 6vw, 90px) minmax(0, 1fr);
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  margin: 0;
+  padding: 5px 9px 5px 5px;
+  border: 1px solid transparent;
+  background: white;
+  color: var(--ink);
+  text-align: left;
+  text-decoration: none;
+  font: 600 clamp(.9rem, 1.1vw, 1.02rem)/1.35 system-ui, sans-serif;
+  cursor: pointer;
+}
+
+.board-option img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  background: var(--beige-light);
+}
+
+.board-option:hover {
+  border-color: #c3cbd6;
+}
+
+.board-option[aria-current="true"],
+.board-option[aria-pressed="true"] {
+  border-color: var(--line);
+  background: #faf7ef;
+}
+
+.board-option:focus-visible {
+  z-index: 1;
+  outline: 3px solid var(--ink);
+  outline-offset: 2px;
+}
+
+@media (max-width: 800px) {
+  .board-gallery {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .board-options {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: clamp(5px, 1.4vw, 12px);
+  }
+
+  .board-option {
+    grid-template-columns: minmax(0, 1fr);
+    align-content: start;
+    gap: 6px;
+    padding: 4px;
+    font-size: clamp(.82rem, 2.6vw, 1rem);
+    overflow-wrap: anywhere;
+  }
+
+  .board-option span {
+    padding: 0 3px 5px;
+  }
+}

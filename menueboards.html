@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Drei digitale Menüboards und drei kurze Food-Spots für die Gastronomie im Video.">
+  <title>Digitale Menüboards | 7Hands Solution</title>
+  <link rel="stylesheet" href="/site.css">
+  <link rel="stylesheet" href="/menueboards.css">
+  <script src="/menueboards.js" defer></script>
+</head>
+<body>
+  <header>
+    <a class="logo" href="/"><img src="/monogram.svg" alt="">7Hands Solution</a>
+    <nav aria-label="Hauptnavigation">
+      <a href="/">Startseite</a><a href="/loesungen.html" aria-current="location">Lösungen</a><a href="/kontakt.html">Kontakt</a>
+    </nav>
+  </header>
+  <main class="showcase board-page">
+    <div class="page-intro">
+      <p class="kicker">Gastronomie</p>
+      <h1>Digitale Menüboards</h1>
+      <p>Wir gestalten digitale Speisekarten und kurze Videos für Ihre Theke. Wählen Sie einen der drei Menümonitore oder sehen Sie sich einen Produktspot an.</p>
+    </div>
+
+    <div class="board-gallery">
+      <figure class="board-player">
+        <video id="board-video" controls muted loop playsinline preload="metadata"
+               width="1280" height="720" poster="/bilder/menueboard-1.webp"
+               src="/videos/menueboard-1.mp4" aria-labelledby="board-title" aria-describedby="board-description">
+          <a href="/videos/menueboard-1.mp4">Video öffnen</a>
+        </video>
+        <figcaption aria-live="polite" aria-atomic="true">
+          <h2 id="board-title">Döner &amp; Wraps</h2>
+          <p id="board-description">Steak-Döner und Dürüm stehen auf dieser Menütafel im Mittelpunkt.</p>
+        </figcaption>
+      </figure>
+      <div class="board-picker">
+        <section aria-labelledby="monitor-heading">
+          <h2 id="monitor-heading">Menümonitore</h2>
+          <div class="board-options">
+            <a class="board-option" href="/videos/menueboard-1.mp4" aria-current="true"
+               data-description="Steak-Döner und Dürüm stehen auf dieser Menütafel im Mittelpunkt.">
+              <img src="/bilder/menueboard-1.webp" alt="" width="160" height="90">
+              <span>Döner &amp; Wraps</span>
+            </a>
+            <a class="board-option" href="/videos/menueboard-2.mp4"
+               data-description="Der zweite Monitor zeigt Pizza mit geschmolzenem Käse und Pide.">
+              <img src="/bilder/menueboard-2.webp" alt="" width="160" height="90">
+              <span>Pizza &amp; Pide</span>
+            </a>
+            <a class="board-option" href="/videos/menueboard-3.mp4"
+               data-description="Eine Köfte-Bowl mit Sauce, ein Köfte-Teller und eine Chicken-Box sind auf dem dritten Monitor zu sehen.">
+              <img src="/bilder/menueboard-3.webp" alt="" width="160" height="90">
+              <span>Teller, Boxen &amp; Bowls</span>
+            </a>
+          </div>
+        </section>
+        <section aria-labelledby="spot-heading">
+          <h2 id="spot-heading">Kurze Food-Spots</h2>
+          <div class="board-options">
+            <a class="board-option" href="/videos/menueboard-spot-1.mp4"
+               data-description="Mexicano, Thunfisch, Sucuk und vegetarische Pizza wechseln sich im Bild ab.">
+              <img src="/bilder/menueboard-spot-1.webp" alt="" width="160" height="90">
+              <span>Vier Pizzen im Wechsel</span>
+            </a>
+            <a class="board-option" href="/videos/menueboard-spot-2.mp4"
+               data-description="Eine helle Speisekarte präsentiert Bowls, Dönerteller und Lahmacun.">
+              <img src="/bilder/menueboard-spot-2.webp" alt="" width="160" height="90">
+              <span>Bowls, Dönerteller &amp; Lahmacun</span>
+            </a>
+            <a class="board-option" href="/videos/menueboard-spot-3.mp4"
+               data-description="Döner, Pizza und Wrap erscheinen auf einem dreigeteilten Aktionsboard und verschwinden wieder aus dem Bild.">
+              <img src="/bilder/menueboard-spot-3.webp" alt="" width="160" height="90">
+              <span>Döner, Pizza &amp; Wrap in Bewegung</span>
+            </a>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <section class="end-panel">
+      <div>
+        <h2>Welche Gerichte sollen auf Ihren Bildschirm?</h2>
+        <p>Erzählen Sie uns von Ihrer Speisekarte und den Monitoren in Ihrem Betrieb.</p>
+      </div>
+      <a class="button" href="/kontakt.html">Projekt besprechen <span aria-hidden="true">→</span></a>
+    </section>
+  </main>
+  <footer>7Hands Solution · <a href="/impressum.html">Impressum</a> · <a href="/datenschutz.html">Datenschutz</a></footer>
+</body>
+</html>
