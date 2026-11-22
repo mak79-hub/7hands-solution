@@ -35,6 +35,31 @@ for (const video of document.querySelectorAll('video[data-demo]')) {
   }
 
   video.muted = true;
+  if (video.controls) {
+    video.addEventListener('play', () => { wantsPlayback = true; });
+    video.addEventListener('pause', () => {
+      if (visible && !document.hidden) wantsPlayback = false;
+    });
+  }
+  const caption = video.closest('figure')?.querySelector('[data-demo-caption]');
+  const track = video.textTracks[0];
+  if (caption && track) {
+    function showScene() {
+      const cue = track.activeCues?.[0];
+      if (cue) caption.textContent = cue.text;
+    }
+    function selectCaptionMode() {
+      const fullscreen = document.fullscreenElement === video || video.webkitDisplayingFullscreen;
+      track.mode = fullscreen ? 'showing' : 'hidden';
+      showScene();
+    }
+    track.addEventListener('cuechange', showScene);
+    video.querySelector('track')?.addEventListener('load', showScene);
+    document.addEventListener('fullscreenchange', selectCaptionMode);
+    video.addEventListener('webkitbeginfullscreen', selectCaptionMode);
+    video.addEventListener('webkitendfullscreen', selectCaptionMode);
+    selectCaptionMode();
+  }
   if (button) {
     button.hidden = false;
     button.addEventListener('click', () => {

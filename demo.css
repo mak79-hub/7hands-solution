@@ -132,3 +132,14 @@
     margin-top: .5em;
   }
 }
+
+.demo-stage figcaption { display: block; padding: 12px 16px; }
+.demo-stage [data-demo-caption] {
+  margin: 0;
+  color: var(--ink);
+  font-size: clamp(1rem, 1.5vw, 1.15rem);
+  font-weight: 500;
+  line-height: 1.45;
+  min-height: 2.9em;
+}
+.demo-card-media img { height: 100%; }

@@ -8,8 +8,8 @@
   <meta name="description" content="Software für Bestellungen, Bonuskarten, Theke und Selbstbedienungsterminals.">
   <title>Gastronomie | 7Hands Solution</title>
   <link rel="stylesheet" href="/site.css">
-  <link rel="stylesheet" href="/demo.css">
-  <script src="/demos.js" defer></script>
+  <link rel="stylesheet" href="/demo.css?v=rundgang">
+  <script src="/demos.js?v=rundgang" defer></script>
 </head>
 <body>
 <header>
@@ -20,34 +20,33 @@
   <section class="demo-intro" aria-labelledby="loesung-titel">
     <div class="demo-intro-copy">
       <p class="kicker">Gastronomie · Bereits im Einsatz</p>
-      <h1 id="loesung-titel">Bestellen, kassieren und Stammkunden binden</h1>
-      <p>Gäste scannen den QR-Code am Tisch und öffnen die Speisekarte auf ihrem Handy. Das Team sieht die Bestellung an der Theke. Je nach Betrieb sind auch Abholung und Lieferung möglich.</p>
-      <p class="demo-note">Die App zeigt neutrales Branding und Beispieldaten. Der QR-Aufsteller ist ein Gestaltungsbeispiel.</p>
+      <h1 id="loesung-titel">Von der Bestellung bis zur Bonuskarte</h1>
+      <p>Ein QR-Code am Tisch öffnet die Speisekarte. Der Rundgang folgt der Bestellung bis an die Theke und zeigt anschließend Terminal, Teamansicht, Kundenverwaltung und Prämien.</p>
     </div>
     <figure class="demo-stage">
-      <video id="demo-gastronomie" data-demo="gastronomie" muted loop playsinline preload="metadata"
-          width="1080" height="1080" poster="/bilder/qr-tisch.webp"
-          aria-label="Videodemo: Von der QR-Speisekarte zur Bestellung an der Theke.">
-          <source src="/videos/digital-bestellen-tisch9.mp4" type="video/mp4">
-        </video>
+      <video id="demo-gastronomie" data-demo="gastronomie" controls muted loop playsinline preload="metadata"
+             width="1080" height="1080" poster="/bilder/qr-tisch.webp"
+             aria-label="Videorundgang: Von der Bestellung bis zur Bonuskarte">
+        <source src="/videos/gastronomie-rundgang.mp4" type="video/mp4">
+        <track kind="captions" srclang="de" label="Deutsch" src="/videos/gastronomie.vtt" default>
+        <a href="/videos/gastronomie-rundgang.mp4">Videorundgang öffnen</a>
+      </video>
       <figcaption>
-        <span>Bestellen per QR-Code</span>
-        <button type="button" class="demo-toggle" data-demo-toggle aria-controls="demo-gastronomie" hidden>Video abspielen</button>
-        <noscript><a href="/videos/digital-bestellen-tisch9.mp4">Video öffnen</a></noscript>
+        <p data-demo-caption>Ein Gast scannt den QR-Code am Tisch.</p>
       </figcaption>
     </figure>
   </section>
   <section class="screens" aria-label="Eigene App und Kundenangebote">
-  <article class="contact">
-    <h2>Ihre Web-App. Ihre Marke.</h2>
-    <p>Jeder Betrieb erhält eine eigene Web-App mit seinem Geschäftsnamen und Logo. Gäste sehen Ihre Marke auf der digitalen Speisekarte und in der Bonuskarte.</p>
-  </article>
-  <article class="contact">
-    <h2>Angebote direkt aufs Handy</h2>
-    <p>Schicken Sie Mittagsangebote, neue Gerichte oder Extra-Punkte-Aktionen als Push-Nachricht direkt an Kundinnen und Kunden, die Angebote und Benachrichtigungen aktiviert haben.</p>
-  </article>
-</section>
-<section class="gallery"><h2>So sieht die Anwendung aus</h2><div class="screens"><figure><a href="/bilder/gastro-dashboard.webp" aria-label="Chef-Dashboard in Originalgröße öffnen"><img src="/bilder/gastro-dashboard.webp" alt="Chef-Dashboard" loading="lazy" decoding="async"></a><figcaption><h3>Chef-Dashboard</h3><p>Kundenzahl, Punktegutschriften, Einlösungen und die letzten Buchungen im Überblick.</p></figcaption></figure><figure><a href="/bilder/gastro-kunden.webp" aria-label="Kundenverwaltung in Originalgröße öffnen"><img src="/bilder/gastro-kunden.webp" alt="Kundenverwaltung" loading="lazy" decoding="async"></a><figcaption><h3>Kundenverwaltung</h3><p>Kunden suchen und ihren aktuellen Punktestand nachsehen.</p></figcaption></figure><figure><a href="/bilder/gastro-bestellen.webp" aria-label="Digitale Speisekarte in Originalgröße öffnen"><img src="/bilder/gastro-bestellen.webp" alt="Digitale Speisekarte" loading="lazy" decoding="async"></a><figcaption><h3>Digitale Speisekarte</h3><p>Gäste wählen Gerichte und Extras aus und legen sie in den Warenkorb.</p></figcaption></figure><figure><a href="/bilder/gastro-terminal.webp" aria-label="Selbstbedienungsterminal in Originalgröße öffnen"><img src="/bilder/gastro-terminal.webp" alt="Selbstbedienungsterminal" loading="lazy" decoding="async"></a><figcaption><h3>Selbstbedienungsterminal</h3><p>Bestellungen vor Ort am Monitor zusammenstellen.</p></figcaption></figure><figure><a href="/bilder/gastro-mitarbeiter.webp" aria-label="Mitarbeiterbestellung in Originalgröße öffnen"><img src="/bilder/gastro-mitarbeiter.webp" alt="Mitarbeiterbestellung" loading="lazy" decoding="async"></a><figcaption><h3>Mitarbeiterbestellung</h3><p>Das Team erfasst Telefon-, Theken- und Lieferbestellungen.</p></figcaption></figure><figure><a href="/bilder/gastro-theke.webp" aria-label="Thekenansicht in Originalgröße öffnen"><img src="/bilder/gastro-theke.webp" alt="Thekenansicht" loading="lazy" decoding="async"></a><figcaption><h3>Thekenansicht</h3><p>Offene Bestellungen und Eurobeträge auf einen Blick. Das Team erfasst Zahlungen an der Theke. Das Chef-Dashboard ist ein separater Verwaltungsbereich.</p></figcaption></figure><figure><a href="/bilder/gastro-bonus.webp" aria-label="Digitale Bonuskarte in Originalgröße öffnen"><img src="/bilder/gastro-bonus.webp" alt="Digitale Bonuskarte" loading="lazy" decoding="async"></a><figcaption><h3>Digitale Bonuskarte</h3><p>Gäste sehen ihren Punktestand und zeigen ihren persönlichen QR-Code an der Theke vor.</p></figcaption></figure><figure><a href="/bilder/gastro-praemien.webp" aria-label="Prämienübersicht in Originalgröße öffnen"><img src="/bilder/gastro-praemien.webp" alt="Prämienübersicht" loading="lazy" decoding="async"></a><figcaption><h3>Prämienübersicht</h3><p>Gäste sehen verfügbare Prämien und wie viele Punkte sie dafür brauchen.</p></figcaption></figure></div></section><section class="end-panel"><div><h2>Passt das zu Ihrem Betrieb?</h2><p>Wir besprechen, ob Sie mit Bestellungen, dem Bonusprogramm oder beiden starten möchten.</p></div><a class="button" href="/kontakt.html">Projekt besprechen <span aria-hidden="true">→</span></a></section></main>
+    <article class="contact">
+      <h2>Ihre Web-App. Ihre Marke.</h2>
+      <p>Ihr Geschäftsname und Ihr Logo erscheinen auf der digitalen Speisekarte und der Bonuskarte. Je nach Betrieb können Gäste auch zur Abholung oder Lieferung bestellen.</p>
+    </article>
+    <article class="contact">
+      <h2>Angebote direkt aufs Handy</h2>
+      <p>Hat ein Gast Benachrichtigungen aktiviert, können Sie Mittagsangebote, neue Gerichte und Extra-Punkte-Aktionen direkt auf sein Handy schicken.</p>
+    </article>
+  </section>
+  <section class="end-panel"><div><h2>Passt das zu Ihrem Betrieb?</h2><p>Wir besprechen, ob Sie mit Bestellungen, dem Bonusprogramm oder beiden starten möchten.</p></div><a class="button" href="/kontakt.html">Projekt besprechen <span aria-hidden="true">→</span></a></section></main>
 <footer>7Hands Solution · <a href="/impressum.html">Impressum</a> · <a href="/datenschutz.html">Datenschutz</a></footer>
 </body>
 </html>
