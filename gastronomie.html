@@ -8,13 +8,36 @@
   <meta name="description" content="Software für Bestellungen, Bonuskarten, Theke und Selbstbedienungsterminals.">
   <title>Gastronomie | 7Hands Solution</title>
   <link rel="stylesheet" href="/site.css">
+  <link rel="stylesheet" href="/demo.css">
+  <script src="/demos.js" defer></script>
 </head>
 <body>
 <header>
   <a class="logo" href="/"><img src="/monogram.svg" alt="">7Hands Solution</a>
   <nav aria-label="Hauptnavigation"><a href="/">Startseite</a><a href="/loesungen.html" aria-current="page">Lösungen</a><a href="/kontakt.html">Kontakt</a></nav>
 </header>
-<main class="showcase"><div class="page-intro"><p class="kicker">Bereits im Einsatz</p><h1>Bestellen, kassieren und Stammkunden binden</h1><p>Für Imbisse und Restaurants. Alle App-Ansichten zeigen die Oberfläche mit neutralem Branding und Beispieldaten.</p></div><section class="feature-hero detail-hero"><div class="feature-copy"><h2>Hier bestellen</h2><p>Gäste scannen den QR-Code am Tisch und öffnen die digitale Speisekarte auf ihrem Handy. Je nach Betrieb kann die Bestellung auch zur Abholung oder Lieferung angeboten werden.</p><p class="muted">Der QR-Aufsteller ist ein Gestaltungsbeispiel.</p></div><div class="hero-image"><img src="/bilder/qr-tisch.webp" alt="QR-Aufsteller auf Holztisch" loading="eager" decoding="async"></div></section><section class="screens" aria-label="Eigene App und Kundenangebote">
+<main class="showcase">
+  <section class="demo-intro" aria-labelledby="loesung-titel">
+    <div class="demo-intro-copy">
+      <p class="kicker">Gastronomie · Bereits im Einsatz</p>
+      <h1 id="loesung-titel">Bestellen, kassieren und Stammkunden binden</h1>
+      <p>Gäste scannen den QR-Code am Tisch und öffnen die Speisekarte auf ihrem Handy. Das Team sieht die Bestellung an der Theke. Je nach Betrieb sind auch Abholung und Lieferung möglich.</p>
+      <p class="demo-note">Die App zeigt neutrales Branding und Beispieldaten. Der QR-Aufsteller ist ein Gestaltungsbeispiel.</p>
+    </div>
+    <figure class="demo-stage">
+      <video id="demo-gastronomie" data-demo="gastronomie" muted loop playsinline preload="metadata"
+          width="1080" height="1080" poster="/bilder/qr-tisch.webp"
+          aria-label="Videodemo: Von der QR-Speisekarte zur Bestellung an der Theke.">
+          <source src="/videos/digital-bestellen-tisch9.mp4" type="video/mp4">
+        </video>
+      <figcaption>
+        <span>Bestellen per QR-Code</span>
+        <button type="button" class="demo-toggle" data-demo-toggle aria-controls="demo-gastronomie" hidden>Video abspielen</button>
+        <noscript><a href="/videos/digital-bestellen-tisch9.mp4">Video öffnen</a></noscript>
+      </figcaption>
+    </figure>
+  </section>
+  <section class="screens" aria-label="Eigene App und Kundenangebote">
   <article class="contact">
     <h2>Ihre Web-App. Ihre Marke.</h2>
     <p>Jeder Betrieb erhält eine eigene Web-App mit seinem Geschäftsnamen und Logo. Gäste sehen Ihre Marke auf der digitalen Speisekarte und in der Bonuskarte.</p>

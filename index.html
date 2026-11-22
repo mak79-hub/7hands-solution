@@ -8,7 +8,8 @@
   <meta name="description" content="Individuelle Software und Automatisierung für Unternehmen verschiedener Branchen.">
   <title>Software & Automatisierung | 7Hands Solution</title>
   <link rel="stylesheet" href="/site.css?v=tisch9-video">
-  <script src="/bestellvideo.js" defer></script>
+  <link rel="stylesheet" href="/home.css">
+  <script src="/demos.js" defer></script>
 </head>
 <body>
 <header>
@@ -16,41 +17,23 @@
   <nav aria-label="Hauptnavigation"><a href="/" aria-current="page">Startseite</a><a href="/loesungen.html">Lösungen</a><a href="/kontakt.html">Kontakt</a></nav>
 </header>
 <main class="showcase">
-<section class="hero">
-    <h1>Weniger Handarbeit.<br>Mehr Zeit fürs Geschäft.</h1>
-    <p>Wir entwickeln Software, die Abläufe vereinfacht, wiederkehrende Aufgaben automatisiert und vorhandene Systeme verbindet. Für Unternehmen deutschlandweit.</p>
-    <div class="actions"><a class="button" href="/kontakt.html">Projekt besprechen</a><a class="button" href="/automatisierung.html">Automatisierung kennenlernen</a></div>
-  </section>
-
-  <section class="custom" aria-labelledby="gemeinsam-heading">
-    <div class="eyebrow">Individuelle Softwarelösungen</div>
-    <h2 id="gemeinsam-heading">Lassen Sie uns gemeinsam die passende Lösung für Ihren Betrieb entwickeln.</h2>
-    <p>Wir vereinfachen Ihre Abläufe und automatisieren Routineaufgaben. So sparen Sie Zeit, haben weniger Aufwand im Alltag und können besser abschalten, weil wiederkehrende Aufgaben zuverlässig im Hintergrund laufen.</p>
-    <a class="button dark" href="/automatisierung.html">So kann das in Ihrem Betrieb aussehen →</a>
-  </section>
-<section class="end-panel">
-  <div><h2>Sie haben einen eigenen Ablauf im Kopf?</h2><p>Ob Aufträge erfassen, Termine bestätigen oder fehlende Unterlagen nachverfolgen: Wir schauen, welche Schritte Ihnen Arbeit abnehmen und welche vorhandenen Systeme sich verbinden lassen.</p></div>
-  <a class="button" href="/automatisierung.html">Konkrete Beispiele ansehen →</a>
-</section>
-
-<section class="feature-hero">
-  <div class="feature-copy">
-    <p class="kicker">Software &amp; Automatisierung</p>
-    <h2>Digitale Bestellungen in der Praxis</h2>
-    <p>Gäste öffnen die Speisekarte per QR-Code. Bestellungen können direkt beim Team ankommen, das sie an der Theke bearbeitet.</p>
-    <div class="actions"><a class="button" href="/loesungen.html">Lösungen ansehen <span aria-hidden="true">→</span></a><a class="button secondary" href="/kontakt.html">Projekt besprechen</a></div>
-  </div>
+<section class="home-hero" aria-labelledby="home-title">
+    <div class="home-intro">
+      <p class="kicker">Software &amp; Automatisierung</p>
+      <h1 id="home-title">Weniger Handarbeit.<br>Mehr Zeit fürs Geschäft.</h1>
+      <p>Wir verbinden Ihre vorhandenen Systeme und entwickeln Software für die Schritte dazwischen. So müssen Sie Bestellungen, Aufträge und Termine nur einmal erfassen.</p>
+      <div class="actions"><a class="button" href="/kontakt.html">Projekt besprechen</a><a class="home-secondary" href="/automatisierung.html">Automatisierung entdecken <span aria-hidden="true">→</span></a></div>
+    </div>
   <div class="hero-image hero-video">
-    <video id="bestellvideo" autoplay muted loop playsinline preload="metadata" poster="/bilder/qr-tisch.webp" width="1080" height="1080" aria-label="Beispiel: QR-Code scannen, ein Gericht für Tisch 9 auswählen und Bestellung 104 an der Theke empfangen.">
+    <video id="bestellvideo" data-demo="gastronomie" muted loop playsinline preload="metadata" poster="/bilder/qr-tisch.webp" width="1080" height="1080" aria-label="Beispiel: QR-Code scannen, ein Gericht für Tisch 9 auswählen und Bestellung 104 an der Theke empfangen.">
       <source src="/videos/digital-bestellen-tisch9.mp4" type="video/mp4">
       <a href="/videos/digital-bestellen-tisch9.mp4">Video zur digitalen Bestellung ansehen</a>
     </video>
-    <button class="video-toggle" type="button" aria-controls="bestellvideo" hidden>Video pausieren</button>
-    <a class="video-link" href="/gastronomie.html">Digitale Bestellung am Tisch <span aria-hidden="true">↗</span></a>
+    <button class="video-toggle" type="button" data-demo-toggle aria-controls="bestellvideo" hidden>Video pausieren</button>
+    <a class="video-link" data-demo-link="gastronomie" href="/gastronomie.html">Digitale Bestellung am Tisch <span aria-hidden="true">↗</span></a>
   </div>
 </section>
-<section class="home-products"><h2>Software für Ihren Betriebsalltag</h2><div class="product-grid"><article class="product"><a href="/gastronomie.html"><img src="/bilder/gastro-bestellen.webp" alt="Digitale Speisekarte für Gastronomie" loading="lazy" decoding="async"><div><small class="kicker">Bereits im Einsatz</small><h3>Gastronomie</h3><p>Digitale Bestellungen und Bonuspunkte für Restaurants und Imbisse.</p><span class="product-link">Lösung ansehen <span aria-hidden="true">→</span></span></div></a></article><article class="product"><a href="/disposition.html"><img src="/bilder/transport-disposition.webp" alt="Disposition mit Tagesplan und Fahrerzuordnung" loading="lazy" decoding="async"><div><small class="kicker">Wird weiterentwickelt</small><h3>Disposition für Krankenfahrten</h3><p>Fahrten planen, Fahrer zuweisen und offene Aufträge im Blick behalten.</p><span class="product-link">Lösung ansehen <span aria-hidden="true">→</span></span></div></a></article><article class="product"><a href="/supermarkt.html"><img src="/bilder/markt-lager.webp" alt="Entwurf einer Lagerübersicht für den Einzelhandel" loading="lazy" decoding="async"><div><small class="kicker">Konzept</small><h3>Supermarkt & Lagerverwaltung</h3><p>Kundenbindung, Angebote und Warenbestände in einer hellen, übersichtlichen Oberfläche.</p><span class="product-link">Lösung ansehen <span aria-hidden="true">→</span></span></div></a></article></div></section><section class="end-panel"><div><h2>Welche Aufgabe kostet Sie jeden Tag Zeit?</h2><p>Gemeinsam schauen wir, welche Abläufe sich vereinfachen oder automatisieren lassen.</p></div><a class="button" href="/kontakt.html">Projekt besprechen <span aria-hidden="true">→</span></a></section></main>
+<section class="home-products"><h2>Software für Ihren Betriebsalltag</h2><div class="product-grid"><article class="product"><a href="/gastronomie.html"><img src="/bilder/gastro-bestellen.webp" alt="Digitale Speisekarte für Gastronomie" loading="lazy" decoding="async"><div><small class="kicker">Bereits im Einsatz</small><h3>Gastronomie</h3><p>Digitale Bestellungen und Bonuspunkte für Restaurants und Imbisse.</p><span class="product-link">Lösung ansehen <span aria-hidden="true">→</span></span></div></a></article><article class="product"><a href="/disposition.html"><img src="/bilder/medfleet-vorschau.webp" alt="Vorschau der Dispositionssoftware MedFleet" loading="lazy" decoding="async"><div><small class="kicker">Wird weiterentwickelt</small><h3>MedFleet</h3><p>Krankenfahrten planen, Fahrer zuweisen und offene Aufträge im Blick behalten.</p><span class="product-link">Lösung ansehen <span aria-hidden="true">→</span></span></div></a></article><article class="product"><a href="/supermarkt.html"><img src="/bilder/markt-lager.webp" alt="Entwurf einer Lagerübersicht für den Einzelhandel" loading="lazy" decoding="async"><div><small class="kicker">Konzept</small><h3>Supermarkt & Lagerverwaltung</h3><p>Kundenbindung, Angebote und Warenbestände in einer hellen, übersichtlichen Oberfläche.</p><span class="product-link">Lösung ansehen <span aria-hidden="true">→</span></span></div></a></article></div></section><section class="end-panel"><div><h2>Welche Aufgabe kostet Sie jeden Tag Zeit?</h2><p>Gemeinsam schauen wir, welche Abläufe sich vereinfachen oder automatisieren lassen.</p></div><a class="button" href="/kontakt.html">Projekt besprechen <span aria-hidden="true">→</span></a></section></main>
 <footer>7Hands Solution · <a href="/impressum.html">Impressum</a> · <a href="/datenschutz.html">Datenschutz</a> · Rechtliche Pflichtangaben werden vervollständigt.</footer>
 </body>
 </html>
-

@@ -8,13 +8,80 @@
   <meta name="description" content="Produktansichten für Gastronomie, Disposition und Einzelhandel.">
   <title>Lösungen | 7Hands Solution</title>
   <link rel="stylesheet" href="/site.css">
+  <link rel="stylesheet" href="/demo.css">
+  <script src="/demos.js" defer></script>
 </head>
 <body>
 <header>
   <a class="logo" href="/"><img src="/monogram.svg" alt="">7Hands Solution</a>
   <nav aria-label="Hauptnavigation"><a href="/">Startseite</a><a href="/loesungen.html" aria-current="page">Lösungen</a><a href="/kontakt.html">Kontakt</a></nav>
 </header>
-<main class="showcase"><div class="page-intro"><p class="kicker">Unsere Lösungen</p><h1>Software für Ihren Betriebsalltag</h1><p>Sehen Sie an konkreten Oberflächen, wie sich Bestellungen, Fahrten und Warenbestände organisieren lassen.</p></div><div class="product-grid"><article class="product"><a href="/gastronomie.html"><img src="/bilder/gastro-bestellen.webp" alt="Digitale Speisekarte für Gastronomie" loading="lazy" decoding="async"><div><small class="kicker">Bereits im Einsatz</small><h3>Gastronomie</h3><p>Digitale Bestellungen und Bonuspunkte für Restaurants und Imbisse.</p><span class="product-link">Lösung ansehen <span aria-hidden="true">→</span></span></div></a></article><article class="product"><a href="/disposition.html"><img src="/bilder/transport-disposition.webp" alt="Disposition mit Tagesplan und Fahrerzuordnung" loading="lazy" decoding="async"><div><small class="kicker">Wird weiterentwickelt</small><h3>Disposition für Krankenfahrten</h3><p>Fahrten planen, Fahrer zuweisen und offene Aufträge im Blick behalten.</p><span class="product-link">Lösung ansehen <span aria-hidden="true">→</span></span></div></a></article><article class="product"><a href="/supermarkt.html"><img src="/bilder/markt-lager.webp" alt="Entwurf einer Lagerübersicht für den Einzelhandel" loading="lazy" decoding="async"><div><small class="kicker">Konzept</small><h3>Supermarkt & Lagerverwaltung</h3><p>Kundenbindung, Angebote und Warenbestände in einer hellen, übersichtlichen Oberfläche.</p><span class="product-link">Lösung ansehen <span aria-hidden="true">→</span></span></div></a></article></div><section class="end-panel"><div><h2>Sie haben einen eigenen Ablauf im Kopf?</h2><p>Wir entwickeln die Lösung passend zu Ihrem Betrieb und prüfen, welche Systeme wir anbinden können.</p></div><a class="button" href="/automatisierung.html">Beispiele zur Automatisierung ansehen <span aria-hidden="true">→</span></a></section></main>
+<main class="showcase">
+  <div class="page-intro">
+    <p class="kicker">Unsere Lösungen</p>
+    <h1>Software für Ihren Betriebsalltag</h1>
+    <p>Vom Bestelleingang an der Theke bis zur Nachbestellung im Markt: Sehen Sie, wie die Software im Alltag aussieht.</p>
+  </div>
+  <div class="product-grid demo-grid">
+    <article class="product demo-card">
+      <div class="demo-card-media">
+        <video id="demo-gastronomie" data-demo="gastronomie" muted loop playsinline preload="metadata"
+          width="1080" height="1080" poster="/bilder/qr-tisch.webp"
+          aria-label="Videodemo: Von der QR-Speisekarte zur Bestellung an der Theke.">
+          <source src="/videos/digital-bestellen-tisch9.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="demo-card-copy">
+        <p class="kicker">Bereits im Einsatz</p>
+        <h2>Gastronomie</h2>
+        <p>Digitale Bestellungen und Bonuspunkte für Restaurants und Imbisse.</p>
+      </div>
+      <div class="demo-card-actions">
+        <a class="product-link" href="/gastronomie.html" data-demo-link="gastronomie"
+           aria-label="Gastronomie: Lösung ansehen">Lösung ansehen <span aria-hidden="true">→</span></a>
+        <button type="button" class="demo-toggle" data-demo-toggle aria-controls="demo-gastronomie" hidden>Video abspielen</button>
+      </div>
+    </article>
+    <article class="product demo-card">
+      <div class="demo-card-media">
+        <video id="demo-disposition" data-demo="disposition" muted loop playsinline preload="metadata"
+          width="960" height="540" poster="/bilder/medfleet-vorschau.webp"
+          aria-label="MedFleet-Videodemo: Dashboard und Tagesplanung für Krankenfahrten mit Beispieldaten.">
+          <source src="/videos/disposition.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="demo-card-copy">
+        <p class="kicker">Wird weiterentwickelt</p>
+        <h2>Disposition für Krankenfahrten</h2>
+        <p>Mit MedFleet Fahrten planen, Fahrer zuweisen und offene Aufträge im Blick behalten.</p>
+      </div>
+      <div class="demo-card-actions">
+        <a class="product-link" href="/disposition.html" data-demo-link="disposition"
+           aria-label="Disposition für Krankenfahrten: Lösung ansehen">Lösung ansehen <span aria-hidden="true">→</span></a>
+        <button type="button" class="demo-toggle" data-demo-toggle aria-controls="demo-disposition" hidden>Video abspielen</button>
+      </div>
+    </article>
+    <article class="product demo-card">
+      <div class="demo-card-media">
+        <video id="demo-lager" data-demo="lager" muted loop playsinline preload="metadata"
+          width="960" height="540" poster="/bilder/markt-lager.webp"
+          aria-label="Konzeptvideo: Bestände und Nachbestellbedarf in der Lagerübersicht.">
+          <source src="/videos/lager.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="demo-card-copy">
+        <p class="kicker">Konzept</p>
+        <h2>Supermarkt &amp; Lagerverwaltung</h2>
+        <p>Kundenbindung, Angebote und Warenbestände für den Einzelhandel.</p>
+      </div>
+      <div class="demo-card-actions">
+        <a class="product-link" href="/supermarkt.html" data-demo-link="lager"
+           aria-label="Supermarkt &amp; Lagerverwaltung: Lösung ansehen">Lösung ansehen <span aria-hidden="true">→</span></a>
+        <button type="button" class="demo-toggle" data-demo-toggle aria-controls="demo-lager" hidden>Video abspielen</button>
+      </div>
+    </article>
+  </div>
+  <section class="end-panel"><div><h2>Sie haben einen eigenen Ablauf im Kopf?</h2><p>Wir entwickeln die Lösung passend zu Ihrem Betrieb und prüfen, welche Systeme wir anbinden können.</p></div><a class="button" href="/automatisierung.html">Beispiele zur Automatisierung ansehen <span aria-hidden="true">→</span></a></section></main>
 <footer>7Hands Solution · <a href="/impressum.html">Impressum</a> · <a href="/datenschutz.html">Datenschutz</a> · Rechtliche Pflichtangaben werden vervollständigt.</footer>
 </body>
 </html>
