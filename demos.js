@@ -1,6 +1,26 @@
 // Keep the handoff in the destination URL so it also works in a new tab.
 const arrival = new URLSearchParams(location.hash.slice(1));
 const motionPreference = matchMedia('(prefers-reduced-motion: reduce)');
+const players = new Map();
+const visibility = new Map();
+let foreground;
+
+function activate(video) {
+  if (foreground === video) return;
+  const previous = foreground;
+  foreground = video;
+  players.get(previous)?.(false);
+  players.get(video)?.(true);
+}
+
+const observer = 'IntersectionObserver' in window ? new IntersectionObserver(entries => {
+  for (const entry of entries) visibility.set(entry.target, entry.intersectionRatio);
+  let best = foreground;
+  for (const [video, ratio] of visibility) {
+    if (ratio > (visibility.get(best) || 0)) best = video;
+  }
+  activate(visibility.get(best) > 0 ? best : undefined);
+}, { threshold: [0, .01, .1, .25, .5, .75, .9, 1] }) : null;
 
 for (const video of document.querySelectorAll('video[data-demo]')) {
   const key = video.dataset.demo;
@@ -9,7 +29,7 @@ for (const video of document.querySelectorAll('video[data-demo]')) {
   const continuing = arrival.get('demo') === key;
   const startTime = continuing ? Number(arrival.get('t')) : 0;
   let wantsPlayback = continuing ? arrival.get('play') === '1' : !motionPreference.matches;
-  let visible = !('IntersectionObserver' in window);
+  let visible = !observer && players.size === 0;
   let ready = false;
 
   function updateButton() {
@@ -36,7 +56,10 @@ for (const video of document.querySelectorAll('video[data-demo]')) {
 
   video.muted = true;
   if (video.controls) {
-    video.addEventListener('play', () => { wantsPlayback = true; });
+    video.addEventListener('play', () => {
+      wantsPlayback = true;
+      activate(video);
+    });
     video.addEventListener('pause', () => {
       if (visible && !document.hidden) wantsPlayback = false;
     });
@@ -72,13 +95,11 @@ for (const video of document.querySelectorAll('video[data-demo]')) {
   }
   video.addEventListener('loadedmetadata', initialize, { once: true });
   if (video.readyState >= 1) initialize();
-  if ('IntersectionObserver' in window) {
-    const observer = new IntersectionObserver(([entry]) => {
-      visible = entry.isIntersecting;
-      syncPlayback();
-    });
-    observer.observe(video);
-  }
+  players.set(video, active => {
+    visible = active;
+    syncPlayback();
+  });
+  observer?.observe(video);
   document.addEventListener('visibilitychange', syncPlayback);
   motionPreference.addEventListener('change', () => {
     wantsPlayback = !motionPreference.matches;
