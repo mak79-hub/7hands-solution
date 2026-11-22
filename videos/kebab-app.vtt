@@ -22,7 +22,7 @@ Im Warenkorb prüft das Team Menge und Summe und kann die Bestellung drucken.
 An der Theke stehen die Aufträge mit Bestellnummer und Betrag untereinander.
 
 00:00:24.333 --> 00:00:27.933
-Für Bestellung 100 zeigt der Zahlungsdialog Barzahlung und SumUp als Möglichkeiten.
+Bestellung 100 kann an der Theke bar oder mit Karte bezahlt werden.
 
 00:00:27.933 --> 00:00:31.533
 Das Chef-Dashboard bündelt Kundenzahl, Buchungen und Bonuspunkte.
