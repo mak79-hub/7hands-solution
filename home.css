@@ -22,5 +22,6 @@
 @media (max-width: 760px) {
   .home-hero { grid-template-columns: minmax(0, 1fr); padding: 24px 18px 18px; }
   .home-hero .hero-video { max-width: 460px; justify-self: center; }
+  .home-intro .actions { flex-direction: column; align-items: flex-start; gap: 10px; }
   .home-intro h1 { font-size: clamp(36px, 8vw, 52px); }
 }
