@@ -1,8 +1,3 @@
-.board-page h1 {
-  text-wrap: balance;
-  hyphens: auto;
-}
-
 .board-gallery {
   display: grid;
   grid-template-columns: minmax(0, 2.35fr) minmax(270px, 1fr);
@@ -121,11 +116,5 @@
 
   .board-option span {
     padding: 0 3px 5px;
-  }
-
-  .board-option:only-child {
-    grid-column: 1 / -1;
-    grid-template-columns: 88px minmax(0, 1fr);
-    align-items: center;
   }
 }
